@@ -92,4 +92,16 @@ func main() {
 	areaTrapecio := ((baseUno + baseDos) * alturaTrapecio) / 2
 
 	fmt.Println("El Area del Trapecio es :", areaTrapecio)
+
+	//Data Types
+	var shortInt int8 = 3
+	var longInt int64 = 2313212113234256876
+	var shortFloat float32 = 3.1
+	var longFloat float64 = 3.153465212456432145668723312
+	var text string = "string"
+	var boolean bool = true
+	var complex complex128 = 10 + 8i
+
+	fmt.Println(shortInt, longInt, shortFloat, longFloat, text,
+		boolean, complex)
 }
