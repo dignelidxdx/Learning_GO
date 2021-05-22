@@ -4,5 +4,6 @@ go build src/main.go
 
 ./main
 
-run src/main.go
+go run src/main.go
 
+Go can declarate variable with a initial value
