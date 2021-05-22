@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 
@@ -127,4 +130,50 @@ func main() {
 	// Tipo de datos:
 	fmt.Printf("helloMessage: %T\n", helloMessage)
 	fmt.Printf("cursos: %T\n", cursos)
+
+	fmt.Printf("Circulo %.2f \n", areaaCirculo(2))
+	fmt.Printf("Rectangulo %.2f \n", areaaRectangulo(5, 10))
+	fmt.Printf("Trapezoide %.2f \n", areaTrapezoide(10, 5, 3))
+
+	fmt.Println("Function program initialized!")
+
+	messsage := "First message in a function example"
+	firstFunction(messsage)
+
+	threeArguments(15, 7, "String!")
+
+	fmt.Println(returningFunction(4))
+
+	num, twiceNum := doubleReturn(2)
+	fmt.Printf("%d multiplied by 2 is: %d\n", num, twiceNum)
+
+	_, twiceEight := doubleReturn(8)
+	fmt.Printf("8 multiplied by 2 is: %d\n", twiceEight)
+}
+
+func areaaCirculo(radio float64) float64 {
+	return math.Pi * radio * radio
+}
+func areaaRectangulo(base float64, altura float64) float64 {
+	return base * altura
+}
+
+func areaTrapezoide(B float64, b float64, h float64) float64 {
+	return h * (B + b) / 2
+}
+
+func firstFunction(message string) {
+	fmt.Println(message)
+}
+
+func threeArguments(first, second int, third string) {
+	fmt.Printf("Two numbers: %d and %d. One string: %s\n", first, second, third)
+}
+
+func returningFunction(number int) int {
+	return number * 2
+}
+
+func doubleReturn(number int) (c, d int) {
+	return number, number * 2
 }
