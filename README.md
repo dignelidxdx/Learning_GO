@@ -7,3 +7,8 @@ go build src/main.go
 go run src/main.go
 
 Go can declarate variable with a initial value
+
+Documentation
+
+https://golang.org/pkg/
+https://pkg.go.dev/
