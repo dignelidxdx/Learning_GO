@@ -6,12 +6,6 @@ import (
 	"time"
 )
 
-type pc struct {
-	ram   int
-	disk  int
-	brand string
-}
-
 func say(text string, wg *sync.WaitGroup) {
 	defer wg.Done()
 	fmt.Println(text)

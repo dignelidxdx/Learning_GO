@@ -19,3 +19,8 @@ Paralelismo
 Hilos de ejecucion, no es mas una tarea que va a ejecutar el procesador -> va directo al procesador
 
 Goroutines: inicia el proceso de creacion del kerner de linux, el se queda alli esperando que el kerner estuviera listo, en el caso de la concurrencia el espera que esten listas, Gofers va a la tarea donde esta el linux creado para empezar a anunciar y todo esto lo hace de forma concurrente, es decir no espera que uno de los puntos de esas tareas este listas para avanzar hacia adelante o hacia atras con respecto a la tareas en su secuencia de ejecucion y una vez que este listo simplemente va a anunciar que la tarea esta iniciada y se va.
+
+Channels: es un conducto en la cual solo se maneja 1 tipo de dato
+
+
+Concurrencia hace referencia a procesos ejecutándose en paralelo y Asincronismo de javascript se refiere a un proceso ejecutando hilos en paralelo
